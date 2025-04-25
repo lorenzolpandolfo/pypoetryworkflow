@@ -19,10 +19,8 @@ jobs:
         with:
           python-version: "3.13"
       
-      - name: install poetry 
-        uses: abatilo/actions-poetry@v3
-        with:
-          poetry-version: 1.8.2
+      - name: Install Poetry
+        uses: snok/install-poetry@v1
 
       - name: install dependencies
         run: poetry install
